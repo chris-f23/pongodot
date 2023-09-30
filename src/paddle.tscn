@@ -5,7 +5,9 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 50.25, 11.75 )
 
-[node name="Paddle" type="KinematicBody2D"]
+[node name="Paddle" type="KinematicBody2D" groups=[
+"paddle",
+]]
 __meta__ = {
 "_edit_group_": true
 }
