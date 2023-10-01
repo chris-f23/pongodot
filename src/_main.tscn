@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b27lggtg7hvsr"]
+[gd_scene load_steps=9 format=3 uid="uid://b27lggtg7hvsr"]
 
 [ext_resource type="PackedScene" uid="uid://dppath7jmc7nx" path="res://ui.tscn" id="2"]
 [ext_resource type="Script" path="res://main.gd" id="3"]
@@ -6,11 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://b40ejdt2fk6j4" path="res://paddle.tscn" id="4_7myvp"]
 [ext_resource type="Script" path="res://paddle.gd" id="5_n21r3"]
 [ext_resource type="PackedScene" uid="uid://pqtjr7cpvhof" path="res://wall.tscn" id="6_6dot8"]
+[ext_resource type="Texture2D" uid="uid://bqkhyjs1m8wx3" path="res://images/paddle-red.png" id="6_fug2t"]
 [ext_resource type="PackedScene" uid="uid://cdh5yubgsp7iy" path="res://goal-area.tscn" id="7_dy0ks"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("3")
-MAX_SCORE = 3
+MAX_SCORE = 5
 
 [node name="ShotBallTimer" type="Timer" parent="."]
 wait_time = 0.5
@@ -53,6 +54,7 @@ LEFT_ACTION = &"p2_left"
 RIGHT_ACTION = &"p2_right"
 SLIDE_MULTIPLIER = 0.8
 MAX_SPEED = 400
+texture = ExtResource("6_fug2t")
 
 [node name="LeftWall" parent="." instance=ExtResource("6_6dot8")]
 position = Vector2(0, 300)

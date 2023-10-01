@@ -6,7 +6,7 @@ class_name Paddle
 @export var RIGHT_ACTION: StringName;
 @export var SLIDE_MULTIPLIER: float;
 @export var MAX_SPEED: int;
-@export var sprite: Texture2D = load("res://images/paddle-blue.png");
+@export var texture: Texture2D = load("res://images/paddle-blue.png");
 
 var score: int = 0;
 
@@ -14,6 +14,9 @@ var score: int = 0;
 var current_speed = 0;
 var current_direction = 0;
 @onready var initial_position = position;
+
+func _ready():
+	$Sprite2D.texture = texture;
 
 func _physics_process(delta):
 	if Input.is_action_pressed(LEFT_ACTION):
