@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqkhyjs1m8wx3"
-path="res://.godot/imported/paddle-red.png-f440311c9ea85214e352dfd924b4d1fa.ctex"
+uid="uid://b7sy5mwcqrnlh"
+path="res://.godot/imported/grey_sliderHorizontal.png-37a03d91da6b8edb25ec95a6c06de1e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/paddle-red.png"
-dest_files=["res://.godot/imported/paddle-red.png-f440311c9ea85214e352dfd924b4d1fa.ctex"]
+source_file="res://images/grey_sliderHorizontal.png"
+dest_files=["res://.godot/imported/grey_sliderHorizontal.png-37a03d91da6b8edb25ec95a6c06de1e4.ctex"]
 
 [params]
 
